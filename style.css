@@ -1,0 +1,128 @@
+.options {
+    height: 60px;
+    width: 100%;
+    max-width: 320px;
+    background-color: #d0ebff;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #003366;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+}
+.options:hover {
+    border: 2px solid #00796b;
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #d6e4ff, #c0ddff);
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e0f2f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.qus {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#qus {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #00695c;
+    text-align: center;
+}
+#next {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+#next:hover {
+    background-color: #004d40;
+    cursor: pointer;
+}
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+.feedback {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-align: center;
+    max-width: 90%;
+    background-color: #f0f4f8;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+/* Correct and wrong coloring handled by JS */
+.correct {
+    background-color: #2ecc71 !important;
+    color: white !important;
+    border: 2px solid #27ae60;
+}
+.wrong {
+    background-color: #e74c3c !important;
+    color: white !important;
+    border: 2px solid #c0392b;
+}
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .options {
+        font-size: 16px;
+        padding: 8px 15px;
+        width: 90%;
+    }
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    #qus {
+        font-size: 18px;
+    }
+    #next {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .feedback {
+        font-size: 16px;
+    }
+}
+
